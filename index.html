@@ -1,0 +1,59 @@
+<div id="app">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">JS Form validation</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <form action="data.html" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Username"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password *</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email *</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <!--<input
+            type="submit"
+            value="Submit"
+            id="submit"
+            class="btn btn-primary"
+          />-->
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
